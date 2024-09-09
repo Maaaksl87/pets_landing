@@ -457,48 +457,69 @@
             </h2>
 
             <div class="main__ourBrand__wrapper__container__brands">
-              <div class="main__ourBrand__wrapper__container__brands__arrow">
-                <img src="./img/orange_arrow.svg" alt="" />
-              </div>
-              <div class="main__ourBrand__wrapper__container__brands__brand">
-                <img src="./img/logo_1_brands 1.png" alt="" />
-              </div>
-              <div class="main__ourBrand__wrapper__container__brands__brand">
-                <img src="./img/logo_2_brands.png" alt="" />
-              </div>
-              <div class="main__ourBrand__wrapper__container__brands__brand">
-                <img src="./img/logo_3_brands.png" alt="" />
-              </div>
-              <div class="main__ourBrand__wrapper__container__brands__brand">
-                <img src="./img/logo_4_brands.png" alt="" />
-              </div>
               <div
+                id="prev"
+                class="main__ourBrand__wrapper__container__brands__arrow"
+              >
+                <img src="./img/orange_arrow.svg" alt="Previous" />
+              </div>
+
+              <!-- Перевіряємо, чи є клас active у першого слайда -->
+              <div
+                class="main__ourBrand__wrapper__container__brands__brand active"
+              >
+                <img src="./img/logo_1_brands 1.png" alt="Brand 1" />
+              </div>
+
+              <div class="main__ourBrand__wrapper__container__brands__brand">
+                <img src="./img/logo_2_brands.png" alt="Brand 2" />
+              </div>
+
+              <div class="main__ourBrand__wrapper__container__brands__brand">
+                <img src="./img/logo_3_brands.png" alt="Brand 3" />
+              </div>
+
+              <div class="main__ourBrand__wrapper__container__brands__brand">
+                <img src="./img/logo_4_brands.png" alt="Brand 4" />
+              </div>
+
+              <div
+                id="next"
                 class="main__ourBrand__wrapper__container__brands__arrow--right"
               >
-                <img src="./img/orange_arrow.svg" alt="" />
+                <img src="./img/orange_arrow.svg" alt="Next" />
               </div>
             </div>
+
             <div class="main__ourBrand__wrapper__container__elements">
-              <div class="main__ourBrand__wrapper__container__elements__arrow">
-                <img src="./img/orange_arrow.svg" alt="" />
+              <div
+                id="mobile-prev"
+                class="main__ourBrand__wrapper__container__elements__arrow"
+              >
+                <img src="./img/orange_arrow.svg" alt="Previous" />
               </div>
 
+              <!-- Перевіряємо, чи dots відображаються правильно -->
               <div class="main__ourBrand__wrapper__container__elements__dots">
                 <div
-                  class="main__ourBrand__wrapper__container__elements__dots--dot"
+                  class="main__ourBrand__wrapper__container__elements__dots--dot active"
+                  data-slide="0"
                 ></div>
                 <div
                   class="main__ourBrand__wrapper__container__elements__dots--dot"
+                  data-slide="1"
                 ></div>
                 <div
                   class="main__ourBrand__wrapper__container__elements__dots--dot"
+                  data-slide="2"
                 ></div>
               </div>
 
               <div
+                id="mobile-next"
                 class="main__ourBrand__wrapper__container__elements__arrow--right"
               >
-                <img src="./img/orange_arrow.svg" alt="" />
+                <img src="./img/orange_arrow.svg" alt="Next" />
               </div>
             </div>
           </div>
@@ -617,5 +638,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
